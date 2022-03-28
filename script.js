@@ -10,7 +10,6 @@ var age=28;
 var fullAge=true;
 var job;
 job='teacher';
-*/
 
 // Variable naming Rules 
  
@@ -42,10 +41,10 @@ var lastName=prompt('What is first name');
 console.log(firstName +' '+lastName);
 */
 
-/**
+/**********************************
  * Basic Operators 
- */
-
+ 
+************************************/
 // Math Operators
 
 var ageJafary, ageJohn, currentYear,johnYearOfBirth,jafaryYearOfBirth;
@@ -66,6 +65,14 @@ console.log(currentYear/10);
 var ageOlder=ageJohn>ageJafary;
 
 
+// Operator Precedence
+
+var now= 2022;
+var yearOfBirthJuly=1997;
+var fullAge=18;
+
+var isFullAge=now-yearOfBirthJuly>=fullAge;
+console.log(isFullAge);
 console.log(ageOlder);
 
 // Typeof operators
@@ -79,31 +86,29 @@ console.log(typeof message);
 
 
 
+// Code challenge 1
+// Store  Mark and John Variable
+var massMark=70; // kg 
+var heightMark=1.69;// meter
+
+var massJohn=80; 
+var heightJohn=1.78;//meter
+
+// Calculate Mark and John BMI
+
+var bmaMark=massMark*(heightMark* heightMark);
+var bmaJohn=massJohn*(heightJohn* heightJohn);
+
+console.log(bmaMark,bmaJohn)
 
 
+// Comparisons of BMI btn mark and John
 
+var compBMI= bmaMark>bmaJohn;
 
+// Print to console
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log('is BMI mark\'s is greater than BMI Johns\`s?' +' ' +compBMI);
 
 
 
