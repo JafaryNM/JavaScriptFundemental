@@ -44,7 +44,10 @@ console.log(firstName +' '+lastName);
 /**********************************
  * Basic Operators 
  
+
 ************************************/
+
+/**********************************
 // Math Operators
 
 var ageJafary, ageJohn, currentYear,johnYearOfBirth,jafaryYearOfBirth;
@@ -109,6 +112,58 @@ var compBMI= bmaMark>bmaJohn;
 // Print to console
 
 console.log('is BMI mark\'s is greater than BMI Johns\`s?' +' ' +compBMI);
+
+ 
+************************************/
+
+/**********************************
+ * IF & ELSE STATEMENTS
+
+************************************/
+
+var firstName='John';
+var civilStatus='Single';
+
+// Test civil status 
+
+if(civilStatus==='Married'){
+
+    console.log(firstName + '' + ' ' +'is married');
+
+}
+else {
+    console.log(firstName + ' ' + ' ' + 'will hopefully will marry soon');
+}
+
+// if you have boolen variable already
+
+var isMarried='false';
+
+if(isMarried){
+    console.log(firstName + '' + ' ' +'is married');
+}
+else{
+    console.log(firstName + '' + ' ' +'Hopeful will marry soon');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
