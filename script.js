@@ -119,7 +119,7 @@ console.log('is BMI mark\'s is greater than BMI Johns\`s?' +' ' +compBMI);
 /**********************************
  * IF & ELSE STATEMENTS
 
-************************************/
+
 
 var firstName='John';
 var civilStatus='Single';
@@ -146,6 +146,114 @@ else{
     console.log(firstName + '' + ' ' +'Hopeful will marry soon');
 }
 
+************************************/
+
+/**********************************
+ * Logic Operator
+ 
+
+var firstName='John';
+var age=16;
+
+if (age<13){
+    
+    console.log(firstName + ' ' + 'is boy');
+}
+
+// age for teenager is between 13 and 20
+// age is greate or equal 13 AND not less than 20
+else if(age>=13 && age <20){
+
+    console.log(firstName + ' ' + 'is teenager ');
+}
+// age for young man
+
+else {
+  console.log(firstName + '' + 'is a man');
+}
+
+************************************/
+
+/**********************************
+ * Ternary Operators and Switch Case 
+ 
+
+************************************/
+
+
+
+
+var firstName='John';
+var age=7;
+//Ternary Operator
+// if age is greater than 18 you can drink beer 
+// else drink juice
+
+age>=18 ? console.log(firstName + ' you can drink beer '):
+          console.log(firstName + ' you can drink juice' );
+
+
+var drinkAge=age>=18? 'beer':'juice';
+
+console.log(drinkAge);
+
+
+// Switch Case Statements
+
+var job='instructor';
+
+switch(job){
+ 
+    // Multiple Switch Case Statements
+    case 'teacher':
+        case 'instructor':
+        console.log(firstName +' teach how to student how to code ');
+        break;
+    
+    case 'driver':
+        console.log(firstName +' is good driver');
+        break;
+    
+    case 'designer':
+        console.log(firstName + ' is good UI and UX designer');
+        break;
+    
+    default:
+        console.log(firstName + ' does something else');
+
+}
+
+// Switch Based On Comparisons
+var age=12;
+
+switch(true){
+
+  case age<13:
+      console.log(firstName + ' is boy');
+      break;
+
+  case age>=13 && age<20:
+      console.log(firstName + ' is teenager');
+      break;
+    
+  case age>=20 && age<30:
+      console.log(firstName + ' is young');
+      break;
+
+  default:
+      console.log(firstName + ' is man')
+
+
+
+
+
+
+    
+
+
+
+
+}
 
 
 
@@ -179,6 +287,43 @@ else{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
