@@ -178,7 +178,7 @@ else {
  * Ternary Operators and Switch Case 
  
 
-************************************/
+
 
 
 
@@ -243,17 +243,41 @@ switch(true){
   default:
       console.log(firstName + ' is man')
 
-
-
-
-
-
-    
-
-
-
-
 }
+************************************/
+
+/**********************************
+ * Truths and Fasly Values & Equality 
+ * Operators
+ 
+
+************************************/
+
+// fasly values in JavaScript are undefined, 0, '', NaN, null
+// True Values not consider to falsy values 
+
+var height;// Type of variable is undefined false
+height=23; // Convert to Undefined to true 
+heightZero=0; // Return to zero values 
+
+// Appling OR operator to solve problems 
+if(heightZero || heightZero===0){
+    console.log('Variable is defined')
+}
+else{
+    console.log('Variable is not definded ')
+}
+
+
+// Equality Operators
+// In JavaScript First is doing types convert then compared
+if (height=='23'){
+    console.log('The equal == operator does type coercion');
+}
+// To overcome type Coercion
+
+
+
 
 
 
