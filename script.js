@@ -281,7 +281,7 @@ if (height=='23'){
 * Coding Challenge 2
  
 
-************************************/
+
 
 var scoreMike=(100+100+100)/3;
 var scoreJohn= (100+100+100)/3;
@@ -310,11 +310,44 @@ else{
     console.log('There is draw');
 }
 
+************************************/
+
+/**********************************
+ Functions
+ 
+
+************************************/
+
+// Passing argurments and return in functions 
+
+
+function calcAge(birthYear){
+
+    return 2022-birthYear;
+
+}
+
+function yearUntilRet(year,firstName){
+    // calling anaother function
+
+    var age= calcAge(year)
+    var ageRet=65- age;
+
+    if (ageRet>=0){
+
+        console.log(firstName + 'Is already retiered');
+
+    }
+    else{
+        console.log(firstName + ' remain  ' + ageRet + ' years to retiered');
+    }
+    
 
 
 
+}
 
-
+yearUntilRet(1945, 'Jafary');
 
 
 
