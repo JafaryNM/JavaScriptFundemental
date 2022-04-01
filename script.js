@@ -251,8 +251,6 @@ switch(true){
  * Operators
  
 
-************************************/
-
 // fasly values in JavaScript are undefined, 0, '', NaN, null
 // True Values not consider to falsy values 
 
@@ -274,7 +272,57 @@ else{
 if (height=='23'){
     console.log('The equal == operator does type coercion');
 }
-// To overcome type Coercion
+
+************************************/
+
+
+/**********************************
+ 
+* Coding Challenge 2
+ 
+
+************************************/
+
+var scoreMike=(100+100+100)/3;
+var scoreJohn= (100+100+100)/3;
+var scoreMary= (100+100+100)/3;
+console.log(scoreMike, scoreJohn,scoreMary);
+
+// John to win games should be greater btn Mary and  Mike
+
+if(scoreJohn>scoreMike && scoreJohn>scoreMary){
+   console.log('John\'s wins game with '+ scoreJohn +' points');
+}
+// Mike to win games should be greater btn  John and mary
+
+else if(scoreMike>scoreJohn && scoreMike>scoreMary){
+    console.log('Mike\'s wins game with '+ scoreMike +' points');
+}
+
+// Mary to win games should be greater than John and mary
+
+else if(scoreMary>scoreJohn && scoreMary>scoreMike){
+
+    console.log('Mary\'s wins game with '+ scoreMary +' points');
+
+}
+else{
+    console.log('There is draw');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
