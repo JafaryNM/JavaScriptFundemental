@@ -333,9 +333,9 @@ function yearUntilRet(year,firstName){
     var age= calcAge(year)
     var ageRet=65- age;
 
-    if (ageRet>=0){
+    if (ageRet<=0){
 
-        console.log(firstName + 'Is already retiered');
+        console.log(firstName + ' is already retiered');
 
     }
     else{
