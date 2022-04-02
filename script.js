@@ -316,7 +316,6 @@ else{
  Functions
  
 
-************************************/
 
 // Passing argurments and return in functions 
 
@@ -348,6 +347,77 @@ function yearUntilRet(year,firstName){
 }
 
 yearUntilRet(1945, 'Jafary');
+
+************************************/
+
+/**********************************
+ * Function Declaration 
+ * Fuction  Expression
+ 
+
+************************************/
+
+// Function expression
+// Expression is piece of code which gives values
+
+var whatYouDo=function(firstName, job){
+
+    switch(job){
+     
+
+        // if you using return means you dont need break
+        // return will break automatically if condition is true
+
+        case 'teacher':
+            return firstName + ' is good Teacher ';
+            
+        case 'designer':
+            return firstName + ' is good Website Designer';
+            
+        case 'engineer':
+            return firstName + ' is good Electrical Engineer ';
+        
+        default:
+            return firstName + ' is does something else';
+
+
+    }
+
+}
+var jafaryJob=whatYouDo('Jafary','teacher');
+var johnJob=whatYouDo('Jafary','designer');
+console.log(jafaryJob);
+console.log(johnJob);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
