@@ -510,7 +510,6 @@ console.log(tips , finalValue);
  * Object and Properties
  
 
-************************************/
 //Object literal declaration
 var john={
     firstName:'John',
@@ -553,6 +552,52 @@ jafary.isMarried=false;
 jafary.yearOfBirth=1990;
 jafary.job='Software Engineer';
 console.log(jafary)
+/**********************************
+ * Object and Properties
+ 
+
+************************************/
+
+
+
+/**********************************
+ * Object and Methods
+ 
+
+************************************/
+
+var john={
+    firstName:'John',
+    lastName:'Victor',
+    yearOfBirth:1995,
+    family:[
+        'Methew','Juliana','Paul'
+    ],
+    job:'teacher',
+    isMarried:false,
+
+    calcAage:function(){
+      
+        // Access using this keyword
+     
+       this.age= 2022- this.yearOfBirth;
+
+
+    }
+
+
+
+
+};
+
+console.log(john)
+
+// Stored in variable
+
+var ageJohn=john.calcAage();
+console.log(ageJohn);
+
+
 
 
 
