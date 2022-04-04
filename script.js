@@ -176,11 +176,6 @@ else {
 
 /**********************************
  * Ternary Operators and Switch Case 
- 
-
-
-
-
 
 
 var firstName='John';
@@ -316,7 +311,7 @@ else{
  Functions
  
 
-
+// function Declarations
 // Passing argurments and return in functions 
 
 
@@ -351,11 +346,10 @@ yearUntilRet(1945, 'Jafary');
 ************************************/
 
 /**********************************
- * Function Declaration 
+
  * Fuction  Expression
  
 
-************************************/
 
 // Function expression
 // Expression is piece of code which gives values
@@ -388,6 +382,160 @@ var jafaryJob=whatYouDo('Jafary','teacher');
 var johnJob=whatYouDo('Jafary','designer');
 console.log(jafaryJob);
 console.log(johnJob);
+
+************************************/
+/**********************************
+ * Arrays
+ 
+
+************************************/
+
+// Array initialization
+
+var names=['Jafary','John','Isaac'];
+
+// Creating Arrays Using array method
+
+var students= new Array('Innocent', 'Jafary', 'Reginar');
+
+
+// Access elements in arrays
+
+console.log(students);
+// Arrays is zero based
+
+console.log(students[0]);
+
+// Array length
+
+console.log(students.length);
+
+// Insert Elements in particula elements
+
+students[1]='Methew';
+
+console.log(students);
+
+// Add element to non existing elements 
+// Empty element will be added into array elements
+
+students[5]='Juliana';
+
+console.log(students);
+
+// Add last elemnts in arrays
+
+// find last lenght of an arrays
+
+console.log(students.length);
+
+// put value of length inside index elements
+
+students[students.length]='Wanchota';
+
+console.log(students);
+
+// Differents Datatypes
+
+var john=['John', 'Victor', 1995, 'Teacher', false];
+
+// Array Methods
+// Add element last on an arrays
+
+john.push('blue');
+
+console.log(john);
+
+// Adding element at begginings
+
+john.unshift('Mr');
+
+console.log(john);
+
+// Remove last element into arrays
+
+john.pop();
+
+console.log(john);
+
+// Remove first element into arrays
+
+john.shift();
+
+console.log(john);
+
+// Return index position 
+
+console.log(john.indexOf('John'));
+console.log(john.indexOf(2002));
+
+// Trick to use indexOf Method to find position of an element
+
+var johnIsTeacher=john.indexOf('Teacher')===-1? 'John is not teacher':'John is teacher';
+console.log(johnIsTeacher);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
