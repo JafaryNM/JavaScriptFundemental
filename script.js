@@ -388,8 +388,6 @@ console.log(johnJob);
  * Arrays
  
 
-************************************/
-
 // Array initialization
 
 var names=['Jafary','John','Isaac'];
@@ -475,7 +473,37 @@ var johnIsTeacher=john.indexOf('Teacher')===-1? 'John is not teacher':'John is t
 console.log(johnIsTeacher);
 
 
+************************************/
 
+
+/**********************************
+ * Coding Challenge 3
+ 
+
+************************************/
+
+function tipCalculator(bill){
+
+    var parcentage;
+    if(bill<50){
+        parcentage=0.2;
+    }
+    else if(bill>=50 && bill<200){
+        parcentage=0.15;
+
+    }
+    else{
+        parcentage=0.10;
+    }
+
+    return parcentage*bill;
+
+}
+
+var bills=[124,48,268];
+var tips=[tipCalculator(bills[0]),tipCalculator(bills[1]),tipCalculator(bills[2])];
+var finalValue=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+console.log(tips , finalValue);
 
 
 
