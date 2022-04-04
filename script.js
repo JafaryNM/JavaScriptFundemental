@@ -480,7 +480,7 @@ console.log(johnIsTeacher);
  * Coding Challenge 3
  
 
-************************************/
+
 
 function tipCalculator(bill){
 
@@ -504,6 +504,81 @@ var bills=[124,48,268];
 var tips=[tipCalculator(bills[0]),tipCalculator(bills[1]),tipCalculator(bills[2])];
 var finalValue=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
 console.log(tips , finalValue);
+************************************/
+
+/**********************************
+ * Object and Properties
+ 
+
+************************************/
+//Object literal declaration
+var john={
+    firstName:'John',
+    lastName:'Victor',
+    yearOfBirth:1990,
+    family:[
+        'Methew','Juliana','Paul'
+    ],
+    job:'teacher',
+    isMarried:false,
+};
+
+console.log(john)
+
+// Access Value in arrays using dot notation
+
+console.log(john.firstName);
+
+// Acess using bracket notation using string values
+
+console.log(john['lastName']);
+
+// Advantages of bracket notation access values
+
+var year='yearOfBirth';
+console.log(john[year]);
+
+// Mutated data into an object
+
+john.job='engineer';
+john['isMarried']=true;
+console.log(john);
+
+// Create new object
+
+var jafary= new Object()
+jafary.firstName='Jafary';
+jafary.lastName='Mdegela';
+jafary.isMarried=false;
+jafary.yearOfBirth=1990;
+jafary.job='Software Engineer';
+console.log(jafary)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
