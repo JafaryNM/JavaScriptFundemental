@@ -564,7 +564,6 @@ console.log(jafary)
  * Object and Methods
  
 
-************************************/
 
 var john={
     firstName:'John',
@@ -590,12 +589,155 @@ var john={
 
 };
 
-console.log(john)
-
-// Stored in variable
-
 var ageJohn=john.calcAage();
 console.log(ageJohn);
+
+
+
+
+var john= {
+
+    fullName:'John Victor',
+    mass:98,
+    height:1.73,
+    calcBMI:function(){
+
+       this.bmi= this.mass *(this.height+this.height);
+       return this.bmi;
+    }
+
+}
+var methew= {
+
+    fullName:'Methew Victor',
+    mass:88,
+    height:1.53,
+    calcBMI:function(){
+
+       this.bmi= this.mass *(this.height+this.height);
+       return this.bmi;
+    }
+
+}
+console.log(john,methew);
+
+
+/**********************************
+ * LOOPS
+ 
+
+************************************/
+// for loop array
+for(var i=0;i<10;i++){
+    console.log(i);
+}
+
+// looping arrays
+
+var john=['john',27,'teacher',false];
+
+for( var i=0; i<john.length;i++){
+
+    console.log(john[i]);
+}
+
+// While loop array
+
+// initializaion
+
+var i=0
+
+while(i<john.length){
+
+
+    console.log(john[i]);
+    i++;
+
+}
+
+// Appling break and countinues in  loop
+
+var jafary=['Jafary','software developer', 27, false];
+ 
+// looping array elements 
+
+for(var i=0; i<john.length; i++){
+
+    if(typeof jafary[i]!=='string'){
+       continue;
+    }else{
+        console.log(jafary[i])
+    }
+  
+}
+for(var i=0; i<john.length; i++){
+
+    if(typeof jafary[i]!=='string'){
+       break;
+    }else{
+        console.log(jafary[i])
+    }
+  
+}
+
+// Reversed using for loop
+
+
+var john=['john',27,'teacher',false];
+
+for( var i=john.length-1; i>=0;i--){
+
+    console.log(john[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
